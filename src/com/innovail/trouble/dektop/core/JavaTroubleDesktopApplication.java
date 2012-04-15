@@ -17,7 +17,7 @@ public class JavaTroubleDesktopApplication {
      * @param args
      */
     public static void main (String[] args) {
-        new JoglApplication(new JavaTroubleApplication(), "Trouble", 640, 480, false);
+        new JoglApplication(new JavaTroubleApplication(), "Trouble", 1280, 755, false);
     }
 
 }
