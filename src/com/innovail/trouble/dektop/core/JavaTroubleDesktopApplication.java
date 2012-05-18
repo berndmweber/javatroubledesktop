@@ -6,6 +6,7 @@
 package com.innovail.trouble.dektop.core;
 
 import com.badlogic.gdx.backends.jogl.JoglApplication;
+
 import com.innovail.trouble.core.JavaTroubleApplication;
 
 /**
