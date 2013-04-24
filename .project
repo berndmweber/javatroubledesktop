@@ -18,7 +18,7 @@
 		<link>
 			<name>assets</name>
 			<type>2</type>
-			<location>/home/bweber/workspace/JavaProjects/JavaTroubleAndroid/assets</location>
+			<locationURI>PARENT-1-PROJECT_LOC/JavaTroubleAndroid/assets</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

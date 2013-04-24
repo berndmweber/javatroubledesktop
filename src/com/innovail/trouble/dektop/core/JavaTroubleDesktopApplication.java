@@ -5,7 +5,8 @@
  */
 package com.innovail.trouble.dektop.core;
 
-import com.badlogic.gdx.backends.jogl.JoglApplication;
+import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
+import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 
 import com.innovail.trouble.core.JavaTroubleApplication;
 
@@ -18,7 +19,13 @@ public class JavaTroubleDesktopApplication {
      * @param args
      */
     public static void main (String[] args) {
-        new JoglApplication(new JavaTroubleApplication(), "Trouble", 1280, 755, false);
+        LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
+        cfg.title   = "JavaTrouble";
+        cfg.useGL20 = false;
+        cfg.width   = 1280;
+        cfg.height  = 755;
+        
+        new LwjglApplication(new JavaTroubleApplication(), cfg);
     }
 
 }
