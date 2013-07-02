@@ -8,13 +8,13 @@ package com.innovail.trouble.dektop.core;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 
+import com.innovail.trouble.core.GameApplication;
 import com.innovail.trouble.core.JavaTroubleApplication;
 
 /**
  * 
  */
 public class JavaTroubleDesktopApplication {
-
     /**
      * @param args
      */
@@ -24,7 +24,9 @@ public class JavaTroubleDesktopApplication {
         cfg.useGL20 = false;
         cfg.width   = 1280;
         cfg.height  = 755;
-        
+
+        GameApplication.setInternalPathPrefix ("./bin/");
+
         new LwjglApplication(new JavaTroubleApplication(), cfg);
     }
 
